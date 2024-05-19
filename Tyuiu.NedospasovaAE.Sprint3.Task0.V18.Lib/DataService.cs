@@ -16,7 +16,8 @@ namespace Tyuiu.NedospasovaAE.Sprint3.Task0.V18.Lib
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                multiplySeries *= Math.Pow(2 / (Math.Cos(1) + 0.5), i);
+                multiplySeries = multiplySeries + Math.Pow(2 / (Math.Cos(1) + 0.5), i);
+                multiplySeries++;
             }
             return Math.Round(multiplySeries, 3);
         }
